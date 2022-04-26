@@ -6,10 +6,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   </head>
   <body>
+
+
     <div class="container">
-      <h2>Password Generator</h2>
+    <div class="header">
+      <i class="fa-solid fa-user-secret fa-2xl" id="logo"></i>
+      <h2>Password Generator </h2>
+    </div>
+
+
       <div class="result-container">
         <span id="result"></span>
         <button class="btn" id="clipboard">
@@ -19,30 +27,54 @@
       <div class="settings">
         <div class="setting">
           <label>Password Length</label>
-          <input type="number" id="length" min="4" max="30" value="8">
+          <input type="number" id="length" min="4" max="30" value="20">
         </div>
+        <div class="setting">
+        <label>include words </label>
+        <input type="checkbox" id="words" checked>
+      </div>
         <div class="setting">
           <label>Uppercase include</label>
-          <input type="checkbox" id="uppercase" checked>
+          <input type="checkbox" id="uppercase" unchecked>
         </div>
         <div class="setting">
-          <label>Lowercase include</label>
-          <input type="checkbox" id="lowercase" checked>
+          <label>include Lowercase</label>
+          <input type="checkbox" id="lowercase" unchecked>
         </div>
         <div class="setting">
-          <label>Numbers include</label>
+          <label>include Numbers</label>
           <input type="checkbox" id="numbers" checked>
         </div>
         <div class="setting">
-          <label>Symbols include</label>
-          <input type="checkbox" id="symbols" checked>
+          <label>include Symbols</label>
+          <input type="checkbox" id="symbols" unchecked>
         </div>
-      </div>
+  
+      
+        <button class="btn btn-large" id="generate">
+          Generate Password
 
-      <button class="btn btn-large" id="generate">
-        Generate Password
-      </button>
+ 
+ 
+<i class="fa-solid fa-key" id="icon"></i>
+        </button>
+      </div>
     </div>
+    
+      
+    </div>
+
+
+
+
+
     <script src="script.js"></script>
+
+
+
+
+
+
   </body>
 </html>
+</div>
